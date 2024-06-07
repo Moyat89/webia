@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        .comments-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .comments-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .comments-section p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .comment-box {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .comment-box img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .comment-box .user-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer {
+            border-top: 1px solid #ddd;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer .left, .footer .right {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .left {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .right {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+        .footer h3 {
+            margin: 0 0 10px 0;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .footer .links {
+            margin-top: 10px;
+        }
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .footer .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">Cooking contest 2024 edition</div>
+        <div class="links">
+            <a href="#section1">Home</a>
+            <a href="#section2">The contest</a>
+            <a href="#section3">Recipes</a>
+            <a href="#section4">Contestants</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Contestants</h1>
+        <p>This section describes the recipes of the best contestants</p>
+        <img src="./figma-1.png" alt="Imagen grande">
+    </div>
+
+    <div class="comments-section">
+        <h2>The recipes</h2>
+        <p>These are the recipes of the best contestants</p>
+        <div class="comment-box">
+            <img src="./john.png" alt="Usuario 1">
+            <div class="user-name">John Cooper</div>
+            <p>This Cajun seafood pasta recipe is a hot one, but delicious!</p>
+        </div>
+        <div class="comment-box">
+            <img src="./marta.png" alt="Usuario 2">
+            <div class="user-name">Marta Alonso</div>
+            <p>Salmon reaches its full potential when it's grilled on top of a cedar plank</p>
+        </div>
+        <div class="comment-box">
+            <img src="./mary.png" alt="Usuario 3">
+            <div class="user-name">Mary Ann Stones</div>
+            <p>Irresistible chicken, cooked with vinegar</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <h3>Cooking contest 2024 edition</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="column">
+                <h3>Recipes</h3>
+                <a href="#">Cajun seafood pasta</a>
+                <a href="#">Cedar planked Salmon</a>
+                <a href="#">Poulet au vinagre</a>
+            </div>
+            <div class="column">
+                <h3>Contestants</h3>
+                <a href="#">John Cooper</a>
+                <a href="#">Marta Alonso</a>
+                <a href="#">Mary Ann Stones</a>
+            </div>
+            <div class="column">
+                <h3>Contest Editions</h3>
+                <a href="#">2022</a>
+                <a href="#">2023</a>
+                <a href="#">2024</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
